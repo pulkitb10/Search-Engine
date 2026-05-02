@@ -15,5 +15,6 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true
         run: |
           git --force push https://Pulkitb10:$HF_TOKEN@huggingface.co/spaces/Pulkitb10/Search_Engine_LLM main
